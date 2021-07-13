@@ -1,0 +1,88 @@
+/* -----------Common style------------------  */
+body{
+    font-family: 'Baloo Bhai 2', cursive;   
+}
+
+
+/* ----------------------first section start ----------------- */
+.container{
+    display: flex;
+    align-items: center;
+    background-color: rgb(45, 37, 160);
+    width: 100%;
+    height: 677px;
+    margin-bottom: 85px;
+    
+}
+.copa{
+    margin: 207px 156px;
+}
+.copa h1{
+    color: #FFFFFF;
+    font-size: 64px;
+    margin-bottom: 0px;
+}
+.copa button{
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    
+}
+.copa button a{
+    text-decoration: none;
+    color:  rgb(255, 255, 255);
+}
+
+.banner img{
+    Width:556.01px; 
+    Height:438px;
+    margin-right: 140px;
+
+
+}
+/* ----------------------
+first section end
+----------------------  */
+/* ---------------Animation start------------------  */
+.banner{
+    transition: 2s;
+    margin-right: auto;
+}
+.banner:hover{
+    transform: rotate(30deg);
+}
+/* --------------------Animation end-----------------  */
+/* ----------Players Info style Start-------------  */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 45px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+.thumbnail{
+    background-color: rgba(255, 255, 255);
+    border: 1px solid rgba(240,240,240) ;
+    box-shadow: 5px 5px 2px rgb(233 222 222 / 44%);
+    width: 292px;
+    height: 444px;
+    padding: 15px;
+}
+.thumbnail img{
+    width: 300px;
+    height: 270px;
+}
+.thumbnail .player-name{
+    font-size: 28px;
+    color: rgb(24, 25, 31);
+    margin-top: 0px;
+}
+.thumbnail .player-info{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+/* ------------------Players Info style End------------------ */
+
+
+    
+    
