@@ -59,6 +59,7 @@ first section end
     grid-gap: 45px;
     margin-left: 180px;
     margin-right: 180px;
+    margin-bottom: 158px;
 }
 .thumbnail{
     background-color: rgba(255, 255, 255);
@@ -82,7 +83,77 @@ first section end
     color: #6C6C6C;
 }
 /* ------------------Players Info style End------------------ */
-
-
+/* Footer style start here------------ */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img{
+    width: 483px;
+    height: 110px;
+}
+.icon{
+    font-size: 20px;
+}
+.icon,.fa-facebook,.fa-twitter,.fa-youtube{
+    margin-left: 10px;
+}
+h5{
+    font-size: 18px;
+    color:  #000000;
     
-    
+}
+/* ------------Footer end here-------  */
+/* -----------Others start here-------  */
+.others{
+    width: 100%;
+    background-color: #078193;
+}
+.others img{
+    height: 200px;
+    width: 180px;
+}
+/* -----------------Media queries------------------------------- */
+/*----------------------- 
+     Mobile device
+---------------------- */
+@media only screen and (max-width:480px)  {
+    .container{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+    .banner img{
+        width: 330px;
+        height: 260px;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img{
+        width: 275px;
+        height: 110px;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*-------------------- 
+    Tab device
+ ---------------------*/
+ @media only screen and (min-width:768px) and (max-width:1024)  {
+     .container{
+         width: 100%;
+    }
+     .banner img{
+         width: 450px;
+         height: 350px;
+    }
+     .players{
+         grid-template-columns: repeat(2,1fr);
+     }
+
+}
