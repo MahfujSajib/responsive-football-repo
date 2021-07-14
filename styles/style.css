@@ -12,7 +12,6 @@ body{
     width: 100%;
     height: 677px;
     margin-bottom: 85px;
-    
 }
 .copa{
     margin: 207px 156px;
@@ -32,13 +31,10 @@ body{
     text-decoration: none;
     color:  rgb(255, 255, 255);
 }
-
 .banner img{
     Width:556.01px; 
     Height:438px;
     margin-right: 140px;
-
-
 }
 /* ----------------------
 first section end
@@ -83,6 +79,81 @@ first section end
     color: #6C6C6C;
 }
 /* ------------------Players Info style End------------------ */
+/* --------------form start here-----------  */
+.fans{
+    border: 3px solid rgb(236, 235, 225);
+    margin-left: 458px;
+    padding: 58px 56px;
+    width: 33%;
+    border-radius: 30px;
+    display: inline-block;
+    background-color: rgb(1, 157, 181);
+    margin-bottom: 150px;
+}
+.fans h1{
+        color: rgb(27, 27, 27);
+        cursor: pointer;
+}
+.form-group input{
+    font-family: 'Baloo Bhaina 2', cursive;     
+    text-align: center;
+    height: 50px;
+    width: 410px;
+    padding: 10px 20px;
+    margin: 16px -12px;
+    border-radius: 30px;
+    font-size: 25px;
+}
+.fans button{
+    color: white;
+    display: block;
+    margin: 13px auto;
+    width: 150px;
+    font-size: 25px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    border-radius: 30px;  
+
+}
+.btn{
+    cursor: pointer;
+    width: 100px;
+    background-color: #f78400;
+    padding: 20px 15px;
+}
+/* ------------------------Form End here------------------  */
+/* -----------Others start here-------  */
+.others{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #078193;
+    margin-bottom: 150px;
+}
+.others img{
+    height: 200px;
+    width: 180px;
+}
+.event-info ul li{
+    list-style: none;
+    font-size: 15px;
+    color: rgb(245, 245, 245);
+}
+.language h3{
+    color: rgb(245, 245, 245);
+}
+.language ul li{
+    list-style: none;
+    font-size: 15px;
+    color: rgb(245, 245, 245);
+}
+.sponsor-logo img{
+    border-radius: 10px;
+    height: 100px;
+    width: 150px;
+    margin-right: 20px;
+}
+/* -----------Others end here--------------  */
 /* Footer style start here------------ */
 footer{
     display: flex;
@@ -102,18 +173,12 @@ footer{
 h5{
     font-size: 18px;
     color:  #000000;
-    
 }
 /* ------------Footer end here-------  */
-/* -----------Others start here-------  */
-.others{
-    width: 100%;
-    background-color: #078193;
-}
-.others img{
-    height: 200px;
-    width: 180px;
-}
+
+    
+    
+   
 /* -----------------Media queries------------------------------- */
 /*----------------------- 
      Mobile device
@@ -139,6 +204,11 @@ h5{
         grid-template-columns: repeat(1,1fr);
         justify-content: center;
         align-items: center;
+    }
+    .fans{
+        width: 100%;
+        align-items: center;
+        margin-left: auto;
     }
 }
 /*-------------------- 
