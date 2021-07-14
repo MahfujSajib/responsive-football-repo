@@ -1,6 +1,8 @@
 /* -----------Common style------------------  */
 body{
-    font-family: 'Baloo Bhai 2', cursive;   
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 0px;
+    padding: 0px; 
 }
 
 
@@ -25,7 +27,7 @@ body{
     background-color: #E02C6D;
     width: 168px;
     height: 44px;
-    
+
 }
 .copa button a{
     text-decoration: none;
@@ -39,6 +41,7 @@ body{
 /* ----------------------
 first section end
 ----------------------  */
+
 /* ---------------Animation start------------------  */
 .banner{
     transition: 2s;
@@ -48,6 +51,7 @@ first section end
     transform: rotate(30deg);
 }
 /* --------------------Animation end-----------------  */
+
 /* ----------Players Info style Start-------------  */
 .players{
     display: grid;
@@ -79,8 +83,9 @@ first section end
     color: #6C6C6C;
 }
 /* ------------------Players Info style End------------------ */
+
 /* --------------form start here-----------  */
-.fans{
+.form{
     border: 3px solid rgb(236, 235, 225);
     margin-left: 458px;
     padding: 58px 56px;
@@ -90,7 +95,7 @@ first section end
     background-color: rgb(1, 157, 181);
     margin-bottom: 150px;
 }
-.fans h1{
+.form h1{
         color: rgb(27, 27, 27);
         cursor: pointer;
 }
@@ -104,7 +109,7 @@ first section end
     border-radius: 30px;
     font-size: 25px;
 }
-.fans button{
+.form button{
     color: white;
     display: block;
     margin: 13px auto;
@@ -112,7 +117,6 @@ first section end
     font-size: 25px;
     font-family: 'Baloo Bhaina 2', cursive;
     border-radius: 30px;  
-
 }
 .btn{
     cursor: pointer;
@@ -121,6 +125,7 @@ first section end
     padding: 20px 15px;
 }
 /* ------------------------Form End here------------------  */
+
 /* -----------Others start here-------  */
 .others{
     display: flex;
@@ -154,6 +159,7 @@ first section end
     margin-right: 20px;
 }
 /* -----------Others end here--------------  */
+
 /* Footer style start here------------ */
 footer{
     display: flex;
@@ -183,17 +189,25 @@ h5{
 /*----------------------- 
      Mobile device
 ---------------------- */
-@media only screen and (max-width:480px) and (min-width:768px) {
+@media only screen and (max-width:480px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
     .container{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
+        max-height: 100%;
+       justify-content: flex-end;
     }
-    .container,.banner img{
-        width: 250px;
-        width: 100%;
-        height: 100%;
+    .container,.copa{
+        margin-top: 0px;
+    }
+    .banner img{
+       height: 350px;
+       width: 400px;
+       padding-left: 9px;
     }
     .players{
         display: grid;
@@ -208,5 +222,71 @@ h5{
     .logo img {
         width: 360px;
         height: 110px;
+    }
+    .form{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .form h1{
+        padding-right: 30px;
+    }
+    .form-group input{
+        width: 342px;
+        padding: 10px 5px;
+        align-items: center;
+    }
+    .form button{
+        padding: 10px 25px;
+        margin-left: 85px;
+    }
+}
+
+/*-------------------------------- 
+           Tab device
+---------------------------------*/
+@media only screen and (max-width:1024px) {
+    body{
+        margin:0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .container,.copa{
+        margin-top: 0px;
+    }
+    .banner img{
+        padding-left: 92px;
+        padding-bottom: 50px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .form{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .form h1{
+        padding-right: 145px;
+    }
+    .form-group input{
+        margin-left: 65px;
+        width: 450px;
+        padding:10px 20px;
+        align-items: center;
+    }
+    .form button{
+        margin-left: 233px;
+    }
+    .others{
+        width: 100%;
+        margin-left: 39px;
     }
 }
